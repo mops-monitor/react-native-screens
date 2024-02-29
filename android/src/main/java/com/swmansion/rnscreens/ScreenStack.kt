@@ -297,7 +297,7 @@ class ScreenStack(context: Context?) : ScreenContainer<ScreenStackFragment>(cont
     }
 
     private fun performDraw(op: DrawingOp) {
-        super.drawChild(op.canvas, op.child, op.drawingTime)
+        super.drawChild(op.canvas!!, op.child, op.drawingTime)
     }
 
     private fun obtainDrawingOp(): DrawingOp =
